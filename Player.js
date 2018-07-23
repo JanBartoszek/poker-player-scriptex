@@ -1,6 +1,6 @@
 class Player {
   static get VERSION() {
-    return '0.4';
+    return '0.5';
   }
   // static myBet(bet, betValue){
   //   console.log(betValue + ' We bet');
@@ -17,7 +17,8 @@ class Player {
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if and cards: ' + firstCard + secondCard);
         bet(50);
-      } else {
+      } else if (firstCard == secondCard) {
+        console.log('entered second ifand cards: ' + firstCard + secondCard);
         bet(6000);
       }
       // else if (firstCard == secondCard) {
