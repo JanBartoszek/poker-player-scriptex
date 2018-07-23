@@ -8,7 +8,12 @@ class Player {
 
   }
   static betRequest(gameState, bet) {
-    bet(6000);
+    try{
+      myBet(bet, 6000) 
+    }
+    catch (err){
+      console.log(err + 'ERRROR!!!');
+      bet(6000);}
     // console.log('///------------------------------------------------------!!!!!!!');
     // var winningCards = ['A', 'K', 'Q', 'J'];
     // console.log(gameState); 
