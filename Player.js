@@ -43,7 +43,11 @@ class Player {
       console.log(err + 'ERRROR!!!');
       bet(6000);
     }
-    console.log(bet + ' We bet')  
+    try{
+    console.log(bet + ' We bet')  }
+    catch (err) {
+      console.logerr + 'ERRROR!!!');
+    }
   }
 
   static showdown(gameState) {
