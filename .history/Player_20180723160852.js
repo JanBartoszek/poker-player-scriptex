@@ -14,7 +14,6 @@ class Player {
   var winningCards = ['A', 'K', 'Q', 'J'];
 
   static betRequest(gameState, bet) {
-<<<<<<< HEAD
     
     try {
       var firstCard = gameState.players[0].hole_cards[0].rank;
@@ -36,17 +35,6 @@ class Player {
       bet(6000);
     }
       // console.log('///------------------------------------------------------!!!!!!!');
-=======
-    try{
-      this.myBet(bet, 6000);
-      console.log('try');
-    }
-    catch (err){
-      console.log(err + 'ERRROR!!!');
-      console.log('catch');
-      bet(6000);}
-    // console.log('///------------------------------------------------------!!!!!!!');
->>>>>>> a8d2ed87b617a08464b5ee2c192a3730faea010c
     // var winningCards = ['A', 'K', 'Q', 'J'];
     // console.log(gameState); 
     // console.log(gameState.players[0].hole_cards[0].rank);
