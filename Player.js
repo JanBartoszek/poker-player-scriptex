@@ -4,7 +4,7 @@ class Player {
   }
   static myBet(bet, betValue){
     console.log(betValue + ' We bet');
-    bet(betValue)
+    bet(betValue);
 
   }
   static betRequest(gameState, bet) {
