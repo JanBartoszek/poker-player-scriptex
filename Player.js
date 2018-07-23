@@ -29,24 +29,23 @@ class Player {
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if');
         bet(potValue + 10);
+        console.log(bet + ' We bet')
 
       } else if (firstCard == secondCard) {
         console.log('entered second if');
         bet(potValue + 10);
+        console.log(bet + ' We bet')
 
       } else {
         console.log('entered else');
         bet(potValue * (2/3));
+        console.log(bet + ' We bet')
       }
     }
     catch (err) {
       console.log(err + 'ERRROR!!!');
       bet(6000);
-    }
-    try{
-    console.log(bet + ' We bet')  }
-    catch (err) {
-      console.log(err + 'ERRROR!!!');
+      console.log(bet + ' We bet');
     }
   }
 
