@@ -2,32 +2,29 @@ class Player {
   static get VERSION() {
     return '0.1';
   }
-  
-  
-  
   // static myBet(bet, betValue){
   //   console.log(betValue + ' We bet');
   //   bet(betValue);
-
   // }
 
-  var winningCards = ['A', 'K', 'Q', 'J'];
-
   static betRequest(gameState, bet) {
-    
+  
     try {
-      var firstCard = gameState.players[0].hole_cards[0].rank;
-      var secondCard = gameState.players[0].hole_cards[1].rank;
-      if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
-        console.log('entered first if');
-        bet(50);
-      } else if (firstCard == secondCard) {
-        console.log('entered second if');
         bet(6000);
-      } else {
-        console.log('entered else');
-        bet(8);
-      }
+      // var winningCards = ['A', 'K', 'Q', 'J'];
+      // var firstCard = gameState.players[0].hole_cards[0].rank;
+      // var secondCard = gameState.players[0].hole_cards[1].rank;
+      // if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
+      //   console.log('entered first if');
+      //   bet(50);
+      // } 
+      // else if (firstCard == secondCard) {
+      //   console.log('entered second if');
+      //   bet(6000);
+      // } else {
+      //   console.log('entered else');
+      //   bet(8);
+      // }
     }
     catch (err) {
       console.log(err);
