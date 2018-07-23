@@ -5,11 +5,11 @@ class Player {
   
   
   
-  // static myBet(bet, betValue){
-  //   console.log(betValue + ' We bet');
-  //   bet(betValue)
+  static myBet(bet, betValue){
+    console.log(betValue + ' We bet');
+    bet(betValue);
 
-  // }
+  }
 
   var winningCards = ['A', 'K', 'Q', 'J'];
 
@@ -20,13 +20,13 @@ class Player {
       var secondCard = gameState.players[0].hole_cards[1].rank;
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if');
-        bet(50);
+        this.myBet(bet,50);
       } else if (firstCard == secondCard) {
         console.log('entered second if');
-        bet(6000);
+        this.myBet(bet,6000);
       } else {
         console.log('entered else');
-        bet(8);
+        this.myBet(bet,8);
       }
     }
     catch (err) {
