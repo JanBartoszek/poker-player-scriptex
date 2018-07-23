@@ -8,7 +8,7 @@ class Player {
 
   }
   static betRequest(gameState, bet) {
-    myBet(bet, 6000);
+    bet(6000);
     // console.log('///------------------------------------------------------!!!!!!!');
     // var winningCards = ['A', 'K', 'Q', 'J'];
     // console.log(gameState); 
