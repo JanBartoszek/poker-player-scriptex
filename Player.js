@@ -31,11 +31,11 @@ class Player {
       
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if');
-        bet(potValue);
+        bet(potValue + 10);
 
       } else if (firstCard == secondCard) {
         console.log('entered second if');
-        bet(potValue);
+        bet(potValue + 10);
 
       } else {
         console.log('entered else');
@@ -44,7 +44,7 @@ class Player {
     }
     catch (err) {
       console.log(err + 'ERRROR!!!');
-      bet(potValue);
+      bet(potValue + 10);
     }
       
   }
