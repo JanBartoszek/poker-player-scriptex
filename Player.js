@@ -5,7 +5,7 @@ class Player {
   
   static betRequest(gameState, bet) {
     console.log('///------------------------------------------------------!!!!!!!');
-    var winningCards = ['A', 'K', 'Q', 'J']
+    var winningCards = ['A', 'K', 'Q', 'J'];
     console.log(gameState); 
     console.log(gameState.players[0].hole_cards[0].rank);
     console.log(gameState.players[0].hole_cards[1].rank);
