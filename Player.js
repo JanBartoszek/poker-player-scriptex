@@ -9,7 +9,9 @@ class Player {
     console.log(gameState); 
     console.log(gameState.players[0].hole_cards[0].rank);
     console.log(gameState.players[0].hole_cards[1].rank);
-    console.log(gameState.community_cards)
+    console.log(gameState.community_cards[0]);
+    console.log(gameState.community_cards[1]);
+    console.log(gameState.community_cards[2]);
     // gameState.community_cards.forEach(element => {console.log(gameState.community_cards[element].rank)});
     // if (gameState.players[0].hole_cards[0].rank == gameState.players[0].hole_cards[1].rank||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players[0].hole_cards[0].rank})||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players[0].hole_cards[0].rank}))
       
