@@ -4,7 +4,7 @@ class Player {
   }
   
   static betRequest(gameState, bet) {
-    console.log('///');
+    console.log('///------------------------------------------------------!!!!!!!');
     
     console.log(gameState); 
     console.log(gameState.players[0].hole_cards[0].rank);
