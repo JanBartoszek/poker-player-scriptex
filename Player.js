@@ -8,17 +8,11 @@ class Player {
     var winningCards = ['A', 'K', 'Q', 'J']
     console.log(gameState); 
     console.log(gameState.players[0].hole_cards[0].rank);
-<<<<<<< HEAD
-    bet(2000);
-    console.log(gameState.community_cards)
-    gameState.community_cards.forEach(element => {console.log(gameState.community_cards[element].rank)});
-=======
     console.log(gameState.players[0].hole_cards[1].rank);
-    console.log(gameState.community_cards[0] + 'CARD COMMUNITY');
-    console.log(gameState.community_cards[1] + 'CARD COMMUNITY');
-    console.log(gameState.community_cards[2] + 'CARD COMMUNITY');
+    console.log(gameState.community_cards[0].rank + 'CARD COMMUNITY');
+    console.log(gameState.community_cards[1].rank + 'CARD COMMUNITY');
+    console.log(gameState.community_cards[2].rank + 'CARD COMMUNITY');
     // gameState.community_cards.forEach(element => {console.log(gameState.community_cards[element].rank)});
->>>>>>> 04df525e99e5257fd1d8f8a4a46aad8083c4d935
     // if (gameState.players[0].hole_cards[0].rank == gameState.players[0].hole_cards[1].rank||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players[0].hole_cards[0].rank})||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players[0].hole_cards[0].rank}))
       
     // {
@@ -26,9 +20,6 @@ class Player {
     // }else{
     //   bet(250);
     // }
-<<<<<<< HEAD
-  // }
-=======
     // console.log(gameState.players[0].hole_cards[0].suit);
     var potValue = gameState.pot;
     console.log(potValue + ' !!!!!VVVVVVVALUEPOT')
@@ -57,7 +48,6 @@ class Player {
     }
       
   }
->>>>>>> 04df525e99e5257fd1d8f8a4a46aad8083c4d935
 
   static showdown(gameState) {
   }
