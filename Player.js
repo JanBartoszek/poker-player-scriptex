@@ -1,6 +1,6 @@
 class Player {
   static get VERSION() {
-    return '0.3';
+    return '0.4';
   }
   // static myBet(bet, betValue){
   //   console.log(betValue + ' We bet');
@@ -15,7 +15,7 @@ class Player {
       var firstCard = gameState.players[0].hole_cards[0].rank;
       var secondCard = gameState.players[0].hole_cards[1].rank;
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
-        console.log('entered first if');
+        console.log('entered first if and cards: ' + firstCard + secondCard);
         bet(50);
       } else {
         bet(6000);
