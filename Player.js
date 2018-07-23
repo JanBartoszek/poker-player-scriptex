@@ -46,7 +46,7 @@ class Player {
     try{
     console.log(bet + ' We bet')  }
     catch (err) {
-      console.logerr + 'ERRROR!!!');
+      console.log(err + 'ERRROR!!!');
     }
   }
 
