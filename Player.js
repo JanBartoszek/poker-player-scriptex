@@ -7,6 +7,7 @@ class Player {
     console.log('///');
     
     console.log(gameState); 
+<<<<<<< HEAD
     console.log(gameState.players[0].hole_cards[0].rank);
     console.log(gameState.community_cards)
     gameState.community_cards.forEach(element => {console.log(gameState.community_cards[element].rank)});
@@ -17,6 +18,10 @@ class Player {
     }else{
       bet(250);
     }
+=======
+    console.log(gameState.players[0].hole_cards[0].suit);
+    bet(2000);
+>>>>>>> dd7a9a832842361225855c95b885b9ce859a7931
   }
 
   static showdown(gameState) {
