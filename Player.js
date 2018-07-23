@@ -2,21 +2,39 @@ class Player {
   static get VERSION() {
     return '0.1';
   }
+  
+  
+  
   static myBet(bet, betValue){
     console.log(betValue + ' We bet');
-    bet(betValue);
+    bet(betValue)
 
   }
+
+  var winningCards = ['A', 'K', 'Q', 'J'];
+
   static betRequest(gameState, bet) {
-    try{
-      myBet(bet, 6000)
-      console.log('try')
+    
+    try {
+      var firstCard = gameState.players[0].hole_cards[0].rank;
+      var secondCard = gameState.players[0].hole_cards[1].rank;
+      if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
+        console.log('entered first if');
+        this.myBet(bet,50);
+      } else if (firstCard == secondCard) {
+        console.log('entered second if');
+        this.myBet(bet,6000);
+      } else {
+        console.log('entered else');
+        this.myBet(bet,8);
+      }
     }
-    catch (err){
-      console.log(err + 'ERRROR!!!');
-      console.log('catch')
-      bet(6000);}
-    // console.log('///------------------------------------------------------!!!!!!!');
+    catch (err) {
+      console.log(err);
+      console.log('entered CatchEror');
+      bet(6000);
+    }
+      // console.log('///------------------------------------------------------!!!!!!!');
     // var winningCards = ['A', 'K', 'Q', 'J'];
     // console.log(gameState); 
     // console.log(gameState.players[0].hole_cards[0].rank);
