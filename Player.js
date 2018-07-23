@@ -4,8 +4,9 @@ class Player {
   }
   
   static betRequest(gameState, bet) {
+    console.log('///');
     state=JSON.parse(gameState); 
-    console.log('///')
+    
     console.log(state); 
     bet(0);
   }
