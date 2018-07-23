@@ -7,8 +7,8 @@ class Player {
     console.log('///');
     
     console.log(gameState); 
-    console.log(gameState.players.Scriptex.hole_cards[0].suit);
-    if (gameState.players.Scriptex.hole_cards[0].suit == gameState.players.Scriptex.hole_cards[1].suit) {
+    console.log(gameState.players[0].hole_cards[0].suit);
+    if (gameState.players.players[0].hole_cards[0].suit == gameState.players[0].hole_cards[1].suit) {
       bet(2);
     }else{
       bet(0);
