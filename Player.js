@@ -2,7 +2,11 @@ class Player {
   static get VERSION() {
     return '0.1';
   }
-  
+  static myBet(bet, betValue){
+    console.log(betValue + ' We bet');
+    bet(betValue)
+
+  }
   static betRequest(gameState, bet) {
     console.log('///------------------------------------------------------!!!!!!!');
     var winningCards = ['A', 'K', 'Q', 'J'];
@@ -28,24 +32,24 @@ class Player {
     try{  
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if');
-        bet(potValue + 10);
-        console.log(bet + ' We bet')
+        myBet(bet, potValue + 10);
+
 
       } else if (firstCard == secondCard) {
         console.log('entered second if');
-        bet(potValue + 10);
-        console.log(bet + ' We bet')
+        myBet(bet, potValue + 10);
+
 
       } else {
         console.log('entered else');
-        bet(potValue * (2/3));
-        console.log(bet + ' We bet')
+        myBet(bet, potValue * (2/3));
+
       }
     }
     catch (err) {
       console.log(err + 'ERRROR!!!');
-      bet(6000);
-      console.log(bet + ' We bet');
+      myBet(bet, 6000);
+
     }
   }
 
