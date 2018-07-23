@@ -10,7 +10,7 @@ class Player {
     console.log(gameState.players[0].hole_cards[0].suit);
     if (gameState.players.players[0].hole_cards[0].rank == gameState.players[0].hole_cards[1].rank||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players.players[0].hole_cards[0].rank})||gameState.community_cards.forEach(element => {gameState.community_cards[element].rank==gameState.players.players[0].hole_cards[0].rank}))
       
-    });) {
+    {
       bet(1000);
     }else{
       bet(250);
