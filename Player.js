@@ -28,7 +28,7 @@ class Player {
     try{  
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if');
-        bet(potValue + 10);
+        bet(Math.round(potValue / 2));
 
       } else if (firstCard == secondCard) {
         console.log('entered second if');
@@ -36,7 +36,7 @@ class Player {
 
       } else {
         console.log('entered else');
-        bet(potValue * (2/3));
+        bet(0);
       }
     }
     catch (err) {
