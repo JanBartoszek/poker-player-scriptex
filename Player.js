@@ -9,12 +9,12 @@ class Player {
   }
   static betRequest(gameState, bet) {
     try{
-      myBet(bet, 6000)
-      console.log('try')
+      this.myBet(bet, 6000);
+      console.log('try');
     }
     catch (err){
       console.log(err + 'ERRROR!!!');
-      console.log('catch')
+      console.log('catch');
       bet(6000);}
     // console.log('///------------------------------------------------------!!!!!!!');
     // var winningCards = ['A', 'K', 'Q', 'J'];
