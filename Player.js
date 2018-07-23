@@ -19,7 +19,7 @@ class Player {
 
     
     var potValue = gameState.pot;
-    console.log(potValue + ' !!!!!VVVVVVVALUEPOT')
+    console.log(potValue + ' !!!!!VVVVVVVALUEPOT');
     
     var firstCard = gameState.players[0].hole_cards[0].rank;
     var secondCard = gameState.players[0].hole_cards[1].rank;
@@ -36,7 +36,7 @@ class Player {
 
       } else {
         console.log('entered else');
-        bet(0);
+        bet(potValue * (2/3));
       }
     }
     catch (err) {
