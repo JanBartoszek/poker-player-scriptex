@@ -9,10 +9,10 @@ class Player {
     console.log(gameState); 
     console.log(gameState.players[0].hole_cards[0].rank);
     console.log(gameState.players[0].hole_cards[1].rank);
-    try:
+    try:{
       console.log(gameState.community_cards[0].rank + 'CARD COMMUNITY');
       console.log(gameState.community_cards[1].rank + 'CARD COMMUNITY');
-      console.log(gameState.community_cards[2].rank + 'CARD COMMUNITY');
+      console.log(gameState.community_cards[2].rank + 'CARD COMMUNITY');}
       catch (err) {
         console.log(err + 'ERRROR!!!');};
 
