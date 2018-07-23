@@ -17,8 +17,8 @@ class Player {
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if and cards: ' + firstCard + secondCard);
         bet(50);
-      } else if (firstCard == secondCard) {
-        console.log('entered second ifand cards: ' + firstCard + secondCard);
+      } else {
+        console.log('entered second if');
         bet(6000);
       }
       // else if (firstCard == secondCard) {
