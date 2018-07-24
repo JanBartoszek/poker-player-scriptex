@@ -14,16 +14,16 @@ class Player {
       var winningCards = ['A', 'K', 'Q', 'J'];
       var firstCard = gameState.players[0].hole_cards[0].rank;
       var secondCard = gameState.players[0].hole_cards[1].rank;
+      if (gameState.pot<700){
       if (winningCards.includes(firstCard) || winningCards.includes(secondCard)) {
         console.log('entered first if and cards: ' + firstCard + secondCard);
         bet(50);
-      } else {
-        console.log('entered second if');
-        bet(6000);
       }
-      // else if (firstCard == secondCard) {
-      //   console.log('entered second if');
-      //   bet(6000);
+      else if (firstCard == secondCard) {
+      bet(6000);}}
+      else{
+        bet(6000)
+      }
       // } else {
       //   console.log('entered else');
       //   bet(8);
